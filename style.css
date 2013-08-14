@@ -213,10 +213,10 @@ padding:70px;
  background-color: #e6e6e7;
 }
 
-#bar_grey {
+#bar_green {
  width:100%;
  height: 30px;
- background-color: #e6e6e7;
+ background-color: #39b78a;
 }
 
 #big_green{
@@ -311,6 +311,25 @@ width: 80%;
    width: 30px; 
    height: 30px; 
    background:#e6e6e7 ;
+   -webkit-transform: rotate(-45deg);
+   -moz-transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   -o-transform: rotate(-45deg);
+   transform: rotate(-45deg);
+   /* Rotate Origin */
+   -webkit-transform-origin: 0 50%;
+   -moz-transform-origin: 0 50%;
+   -ms-transform-origin: 0 50%;
+   -o-transform-origin: 0 50%;
+   transform-origin: 0 50%;
+}
+
+#diamond_green {
+   margin-top:-5px; 
+   /* Rotate */
+   width: 30px; 
+   height: 30px; 
+   background: #39b78a;
    -webkit-transform: rotate(-45deg);
    -moz-transform: rotate(-45deg);
    -ms-transform: rotate(-45deg);
@@ -475,13 +494,24 @@ display:inline-block;
 
 #trapezium_t_white_half {
 	margin-top:-20px;
-   height:0; 
-   width: 222px;
-   border-bottom: 20px solid;
-   border-bottom-color: #fff;
-   border-left: 30px solid transparent;
-   border-right: 30px solid transparent;
-   color:black;
+	height:0; 
+	width: 222px;
+	border-bottom: 20px solid;
+	border-bottom-color: white;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	color:black;
+}
+
+#trapezium_t_grey_half {
+	margin-top:-20px;
+	height:0; 
+	width: 222px;
+	border-bottom: 20px solid;
+	border-bottom-color: lightgrey;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	color:black;	
 }
 
 #who_we_work_with_desktop{
@@ -492,18 +522,27 @@ padding-top:45px;
 padding-bottom:30px;
 }
 
-#who_we_work_with_mobile{
-margin-left:30%;
-padding-top:30px;
-padding-bottom:30px;
-display:hide;
+#who_we_work_with_desktop h3{
+	color: black;
+	font-size:18px;
+	font-family:'Quicksand';
+	text-align: center;
 }
 
+#who_we_work_with_mobile{
+	margin-left:30%;
+	padding-top:30px;
+	padding-bottom:30px;
+	display:hide;
+}
 
-#who_we_work_with_mobile{display:none;}
+#jobTitles a {color: black;}
 
-
-
+#workWithUs{
+	background: lightgrey;
+	width: 100%;
+	text-decoration: none;
+}
 
 /* --------------------------------------------
   desktop screen
