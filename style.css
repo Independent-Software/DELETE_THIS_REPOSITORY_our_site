@@ -632,7 +632,7 @@ width: 60%;}
 /* --------------------------------------------
   mobile
 -------------------------------------------- */
-@media (max-width: 480px) {
+@media (max-width: 497px) {
 .body_bkl {
 color:#424142;
 text-align:left;
@@ -737,23 +737,23 @@ line-height:75%;
 
 #trapezium_and_lines{display:none;}
 
-#who_we_work_with_desktop{display:none;}
+/* #who_we_work_with_desktop{display:none;} */
 
-#who_we_work_with_mobile{
+#who_we_work_with_desktop{
   display:inline-block;
   text-align: center;
   margin-left:auto;
   margin-right:auto; 
   padding-top:10px;
   padding-bottom:10px;
-  padding-left:15%;
+  /* padding-left:15%; */
 }
 
-#who_we_work_with_mobile img {
+#who_we_work_with_desktop img {
   clear: left;
 }
 
-#who_we_work_with_mobile img.resize {
+#who_we_work_with_desktop img.resize {
   width: 10px;
   height: auto;
 }
