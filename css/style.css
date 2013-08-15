@@ -146,6 +146,11 @@ header {
     text-align: center;
 }
 
+.phone{
+    text-decoration: none;
+    color: white;
+}
+    
 .tag_blk {
     color:#424142;
     text-align:center;
