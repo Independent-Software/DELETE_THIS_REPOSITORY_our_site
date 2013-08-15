@@ -494,15 +494,20 @@ header {
     padding-left: 30px;
     padding-right: 30px;
     background: #e6e6e7;
-    }
+}
+  
+#who_we_work_with_desktop_grey a{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+  
 #who_we_work_with_mobile{
     margin-left:30%;
     padding-top:30px;
     padding-bottom:30px;
     display:hide;
 }
-
-
 
 #who_we_work_with_mobile{display:none;}
 
@@ -758,6 +763,11 @@ header {
     padding-bottom:30px;
     display:hide;
     background: #e6e6e7;
+}
+
+#who_we_work_with_mobile_grey a{
+    text-decoration: none;
+    color: black;
 }
 
 #who_we_work_with_mobile img {clear: left;}
