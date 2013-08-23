@@ -108,6 +108,12 @@ header {
     text-align:center;
 }
 
+.job_title {
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 .padding_left{
     padding-left:20%
 }
@@ -486,6 +492,8 @@ header {
     padding-bottom:30px;
 }
 
+#who_we_work_with_mobile{display:none;}
+
 #who_we_work_with_desktop_grey{
     margin-left:auto;
     margin-right: auto;
@@ -495,26 +503,11 @@ header {
     background: #e6e6e7;
 }
 
-#who_we_work_with_desktop h3{
-    padding-left: 30px;
-    padding-right: 30px;
-    background: #e6e6e7;
-}
-  
 #who_we_work_with_desktop_grey a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 19px;
     color: black;
 }
-  
-#who_we_work_with_mobile{
-    margin-left:30%;
-    padding-top:30px;
-    padding-bottom:30px;
-    display:hide;
-}
-
-#who_we_work_with_mobile{display:none;}
 
 #who_we_work_with_mobile_grey{display: none;}
 
@@ -586,7 +579,7 @@ header {
 
 
 /* --------------------------------------------
-  laptop screen
+  laptop screen (tablet/iPad)
 -------------------------------------------- */
 @media (max-width: 1024px) {
 .center_images {
@@ -603,6 +596,12 @@ header {
 }
 
 .image_padding{padding-right:250px;}
+
+
+.job_title {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 .padding_left{
     padding-left:20%;
@@ -626,7 +625,7 @@ header {
 /* --------------------------------------------
   mobile
 -------------------------------------------- */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 
 .body_bkl {
     color:#424142;
@@ -676,6 +675,12 @@ header {
     font-size:18px;
     line-height:150%;
     text-align:center;
+}
+
+
+.job_title {
+    display: block;
+    padding-bottom: 12px;
 }
 
 .mobile_image{width:150px;}
@@ -752,6 +757,8 @@ header {
 
 #who_we_work_with_desktop{display:none;}
 
+
+
 #who_we_work_with_mobile{
     display:inline-block;
     text-align: center;
@@ -762,33 +769,12 @@ header {
     padding-left:15%;
 }
 
-#who_we_work_with_mobile_grey{
-    margin-left:30%;
-    padding-top:30px;
-    padding-bottom:30px;
-    display:hide;
-    background: #e6e6e7;
-}
-
-#who_we_work_with_mobile_grey a{
-    text-decoration: none;
-    color: black;
-}
-
 #who_we_work_with_mobile img {clear: left;}
 
 #who_we_work_with_mobile img.resize {
     width: 10px;
     height: auto;
 }
-
-#who_we_work_with{
-    display:inline-block; 
-    margin-left:0;
-}
-
-#diamond_grey{display:none;}
-
 
 
 }
