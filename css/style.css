@@ -14,17 +14,96 @@ a{
 html, body, #container { 
     height: 100%;
 }
-
-body{font-family: 'Quicksand', 'Helvetica', 'Arial', sans-serif;}
+#logo{text-align: center;
+padding-top: 20px;}
+body{font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;}
 
 body > #container { 
     height: auto; 
     min-height: 100%; 
 }
 
+form{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+	background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+	margin:auto;
+	position:relative;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
 header {
     margin-right: auto;
     margin-left: auto;
+}
+
+img.facebook{
+	width:33px;
+	height: 32px;
+	background: url(../img/fb_button.png) 0px 0px;
+}
+
+.facebook:hover{background: url(../img/fb_button.png) 0px 32px;}
+
+img.twitter{
+	width: 33px;
+	height: 32px;
+	background: url(../img/tw_button.png) 0px 0px;
+}
+
+.twitter:hover{background: url(../img/tw_button.png) 0px 32px;}
+
+img.pardigo{
+	width: 142px;
+	height: 67px;
+	background: url(../img/pardigo_logo_sprt.png) 0px 0px;
+}
+
+.pardigo:hover{background: url(../img/pardigo_logo_sprt.png) 0px 67px;}
+
+img.ctBarns{
+	width: 137px;
+	height: 67px;
+	background: url(../img/barns_logo_sprt.png) 0px 0px;
+}
+
+.ctBarns:hover{background: url(../img/barns_logo_sprt.png) 0px 67px;}
+
+img.IN3{
+	width: 66px;
+	height: 67px;
+	background: url(../img/in3_logo_sprt.png) 0px 0px;
+}
+
+.IN3:hover{background: url(../img/in3_logo_sprt.png) 0px 67px;}
+
+img.fitWeek{
+	width: 157px;
+	height: 67px;
+	background: url(../img/fitweek_logo_sprt.png) 0px 0px;
+}
+
+.fitWeek:hover{background: url(../img/fitweek_logo_sprt.png) 0px 67px;}
+
+img.YNIO{
+	width: 120px;
+	height: 67px;
+	background: url(../img/ynio_logo_sprt.png) 0px 0px;
+}
+
+.YNIO:hover{background: url(../img/ynio_logo_sprt.png) 0px 67px;}
+
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 160px;
+}
+select {width: 155px;}
+textarea {width: 148px;}
+textarea:focus, input:focus {
+border: 1px solid #09C;
 }
 
 .body_bkl {
@@ -265,6 +344,14 @@ header {
     width: 80%;
 }
 
+#contactus{
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	display:none;
+}
+
 #container {
     height:100%; 
     width: 100%; 
@@ -419,7 +506,7 @@ header {
 	color:#fff;
 	text-align:center;
 	letter-spacing:-1pt;
-	font-size:60px;
+	font-size:40px;
     font-weight: normal;
 	padding-top:50px;
 }
@@ -492,9 +579,13 @@ header {
     padding-bottom:30px;
 }
 
+#who_we_work_with_desktop img{
+	margin-left: 1%;
+	margin-right: 1%;}
+
 #who_we_work_with_mobile{display:none;}
 
-#who_we_work_with_desktop_grey{
+#work_with_us_desktop{
     margin-left:auto;
     margin-right: auto;
     text-align: center;
@@ -503,14 +594,22 @@ header {
     background: #e6e6e7;
 }
 
-#who_we_work_with_desktop_grey a{
+#work_with_us_desktop a{
     text-decoration: none;
     font-size: 19px;
     color: black;
 }
 
-#who_we_work_with_mobile_grey{display: none;}
+#work_with_us_mobile{display: none;}
 
+#workWithUs a {
+	font-size: 22px;
+	text-align: center;
+	color: black;}
+
+#workWithUs h3{text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;}
 
 /* --------------------------------------------
   desktop screen
