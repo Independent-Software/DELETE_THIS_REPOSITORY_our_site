@@ -33,22 +33,12 @@ form{
 	display: block;
 }
 
-header {
-    margin-right: auto;
-    margin-left: auto;
-	text-align: center;
-	padding-bottom: 20px;
-}
-
-
-.facebook{
-	margin-top: 16px;}
-
 img.facebook{
 	width:33px;
 	height: 32px;
 	background: url(../img/fb_button.png) 0px 0px;
-	
+	float: left;
+	margin-top: -10px;
 }
 
 .facebook:hover{background: url(../img/fb_button.png) 0px 32px;}
@@ -56,7 +46,9 @@ img.facebook{
 img.twitter{
 	width: 33px;
 	height: 32px;
+	float: left;
 	background: url(../img/tw_button.png) 0px 0px;
+	margin-top: -10px;
 }
 
 .twitter:hover{background: url(../img/tw_button.png) 0px 32px;}
@@ -157,9 +149,9 @@ border: 1px solid #09C;
 }
 
 .center{
-    width:60%;
-    margin-left:auto;
-    margin-right:auto;
+    width:35%;
+    margin: 0 auto;
+	padding-top: 20px;
 }
 
 .col_wrap {
@@ -230,23 +222,24 @@ border: 1px solid #09C;
 .mobile_header{
     display:none;
 }
+
+.navigation{padding-bottom: 25px;
+float: left;
+}
+
+.indieBadge{float: left;
+margin-top: -25px;}
+
 .nav_links{
     color:rgb(165, 165, 165);
     padding-left: 10px;
 	padding-right: 10px;
     font-size:15px;
 	font-weight: normal;
-	padding-bottom: 50px;
-	
 }
-
+#center p{padding-bottom: 20px;}
 .nav_links:hover{
 	color: #818486;
-}
-
-.nav{
-    padding:20px;
-    text-align: center;
 }
 
 .phone{
@@ -273,7 +266,7 @@ border: 1px solid #09C;
     text-align:center;
     letter-spacing:0pt;
     font-size:60px;
-	padding-top: 50px;
+	padding-top: 20px;
     padding-bottom:30px;
 }
 
@@ -502,6 +495,8 @@ border: 1px solid #09C;
 
 #mobile_services{display:none;}
 
+#mobile_nav{display: none;}
+
 #navBar{
 	text-align: center;
 	padding-bottom: 20px;
@@ -605,7 +600,7 @@ textarea {
 
 #who_we_work_with_mobile{display:none;}
 
-#work_with_us_desktop{
+#job_titles{
     margin-left:auto;
     margin-right: auto;
     text-align: center;
@@ -614,7 +609,7 @@ textarea {
     background: #e6e6e7;
 }
 
-#work_with_us_desktop a{
+#job_titles a{
     text-decoration: none;
     font-size: 19px;
     color: black;
@@ -662,6 +657,8 @@ padding-bottom: 10px;}
     width: 100%
 }
 
+#mobile_nav{display: none;}
+
 }
 
 /* --------------------------------------------
@@ -694,7 +691,7 @@ padding-bottom: 10px;}
     margin-right: auto; 
     width: 100%
 }
-
+#mobile_nav{display: none;}
 }
 
 
@@ -736,6 +733,8 @@ padding-bottom: 10px;}
 
 #img_body_web{margin-left:100px}
 
+#mobile_nav{display: none;}
+
 }
 /* --------------------------------------------
   END tablet/iPad
@@ -766,7 +765,11 @@ padding-bottom: 10px;}
     padding-top:40px;
     padding-bottom:0px;
 }
-
+.center{
+    width:35%;
+    margin: 0 auto;
+	padding-top: 20px;
+}
  /* .center{display:none;} */ 
 .center_text{display: block;}
 
@@ -797,10 +800,39 @@ padding-bottom: 10px;}
     text-align:center;
 }
 
+img.facebook{
+	width:33px;
+	height: 32px;
+	background: url(../img/fb_button.png) 0px 0px;
+	float: left;
+	margin-top: -10px;
+}
+
+.facebook:hover{background: url(../img/fb_button.png) 0px 32px;}
+
+img.twitter{
+	width: 33px;
+	height: 32px;
+	float: left;
+	background: url(../img/tw_button.png) 0px 0px;
+	margin-top: -10px;
+}
+
+.twitter:hover{background: url(../img/tw_button.png) 0px 32px;}
 
 .job_title {
     display: block;
     padding-bottom: 12px;
+}
+.indieBadge{float: left;
+margin-top: -25px;}
+
+.nav_links{
+    color:rgb(165, 165, 165);
+    padding-left: 10px;
+	padding-right: 10px;
+    font-size:15px;
+	font-weight: normal;
 }
 
 .mobile_image{width:150px;}
@@ -815,7 +847,7 @@ padding-bottom: 10px;}
     text-align:center;
     letter-spacing:0pt;
     font-size:20px;
-    /* padding-top:25px; */
+    margin-top:-25px;
     padding-bottom:0px;
     font-weight:bold;
 }
@@ -828,7 +860,6 @@ padding-bottom: 10px;}
     
 }
 #col_holder{display: none;}
-
 #desktop_footer{display:none;}
 
 #dev_description{display:none;}
@@ -860,11 +891,15 @@ padding-bottom: 10px;}
 #mobile_services{
     display:block;
     clear: both;
-	
 }
 
 #mobile_services p{
 	text-align: center;}
+	
+#nav{display: none;}
+
+#mobile_nav{width: 50%;
+margin: 0 auto;}
 
 #team_img{width:80%}
 
@@ -892,15 +927,6 @@ padding-bottom: 10px;}
 	padding-right: 10%;
  	width: 80%;
 }
-
-
-
-/* #who_we_work_with_mobile img {clear: left;} */
-
-/* #who_we_work_with_mobile img.resize {
-    width: 10px;
-    height: auto;
-} */
 
 
 }
