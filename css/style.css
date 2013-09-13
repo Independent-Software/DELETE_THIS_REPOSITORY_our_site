@@ -39,6 +39,7 @@ img.facebook{
 	background: url(../img/fb_button.png) 0px 0px;
 	float: left;
 	margin-top: -10px;
+    margin-left: 7px;
 }
 
 .facebook:hover{background: url(../img/fb_button.png) 0px 32px;}
@@ -49,6 +50,7 @@ img.twitter{
 	float: left;
 	background: url(../img/tw_button.png) 0px 0px;
 	margin-top: -10px;
+    margin-left: 10px;
 }
 
 .twitter:hover{background: url(../img/tw_button.png) 0px 32px;}
@@ -149,7 +151,7 @@ border: 1px solid #09C;
 }
 
 .center{
-    width:35%;
+    width:500px;
     margin: 0 auto;
 	padding-top: 20px;
 }
@@ -223,12 +225,15 @@ border: 1px solid #09C;
     display:none;
 }
 
-.navigation{padding-bottom: 25px;
-float: left;
+.navigation{
+    padding-bottom: 25px;
+    float: left;
 }
 
-.indieBadge{float: left;
-margin-top: -25px;}
+.indieBadge{
+    float: left;
+    margin-top: -25px;
+    margin-right: 7px}
 
 .nav_links{
     color:rgb(165, 165, 165);
@@ -584,7 +589,9 @@ padding-bottom: 10px;}
   desktop screen
 -------------------------------------------- */
 @media (max-width: 3000px) {
-
+.center {
+    width: 500px;
+}
 .center_images{
     margin-right: auto;
     margin-left: auto;
@@ -659,7 +666,11 @@ padding-bottom: 10px;}
     width: 80%;
 }
 
-.center{width:70%;}
+.center{
+    width:500px;
+    margin: 0 auto;
+    text-align: center;
+}
 
 .center_text{
     display: block;
@@ -686,6 +697,13 @@ padding-bottom: 10px;}
 #img_title_web{margin-left:100px;}
 
 #img_body_web{margin-left:100px}
+.img_body{
+    font-size: 14px;
+}
+
+.img_title{
+    font-size: 16px;
+}
 
 }
 /* --------------------------------------------
@@ -702,7 +720,7 @@ padding-bottom: 10px;}
     color:#424142;
     text-align:left;
     letter-spacing:0pt;
-    font-size:18px;
+    font-size:20px;
     padding:15px;
     padding-top:0px;
     text-align:center;
@@ -732,12 +750,13 @@ padding-bottom: 10px;}
 
 .mobile_header{display: none;}
 
-.mobile_services_images{width:25%;}
+.mobile_services_images{width:25%;
+padding-top: 15px;}
 
-.img body {
+.img_body {
     color:#424142;
     text-align:left;
-    font-size:15px;
+    font-size:14px;
     line-height:160%;
 }
 
@@ -745,7 +764,7 @@ padding-bottom: 10px;}
     /*color:#fff;*/
     text-align:center;
     letter-spacing:0pt;
-    font-size:18px;
+    font-size:16 px;
     line-height:150%;
     text-align:center;
 }
@@ -800,7 +819,7 @@ img.twitter{
     color:#424142;
     text-align:center;
     letter-spacing:0pt;
-    font-size:20px;
+    font-size:30px;
     margin-top:-25px;
     padding-bottom:0px;
     font-weight:bold;
@@ -855,7 +874,6 @@ img.twitter{
 
 #mobile_nav{
 	display: block;
-	padding-top: 20px;
 }
 
 #team_img{width:80%}
@@ -864,7 +882,7 @@ img.twitter{
     color:#fff;
     text-align:center;
     letter-spacing:0pt;
-    font-size:36px;
+    font-size:30px;
 }
 
 #trapezium_and_lines{display:none;}
