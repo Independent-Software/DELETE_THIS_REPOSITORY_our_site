@@ -55,31 +55,42 @@ img.twitter{
 
 .twitter:hover{background: url(../img/tw_button.png) 0px 32px;}
 
-img.pardigo{
+/*img.pardigo{
     width: 142px;
     height: 67px;
     background: url(../img/pardigo_logo_sprt.png) 0px 0px;
 }
 
 .pardigo:hover{background: url(../img/pardigo_logo_sprt.png) 0px 67px;}
-
+*/
 img.ctBarns{
-    width: 137px;
-    height: 67px;
-    background: url(../img/barns_logo_sprt.png) 0px 0px;
+    width: 171px;
+    height: 58px;
+    background: url(../img/ctbarns_logo_sprite.png) 0px 57px;
 }
 
-.ctBarns:hover{background: url(../img/barns_logo_sprt.png) 0px 67px;}
+.ctBarns:hover{background: url(../img/ctbarns_logo_sprite.png) 0px 0px;}
 
-img.IN3{
-    width: 66px;
-    height: 67px;
-    background: url(../img/in3_logo_sprt.png) 0px 0px;
+img.intelliblast{
+    width: 230px;
+    height: 71px;
+    background: url(../img/intelliblast_logo_sprite.png) 0px 58px;
 }
 
-.IN3:hover{background: url(../img/in3_logo_sprt.png) 0px 67px;}
+.intelliblast:hover{background: url(../img/intelliblast_logo_sprite.png) 0px 0px;}
 
-img.fitWeek{
+
+img.in3{
+    width: 56px;
+    height: 56px;
+    background: url(../img/in3_logo_sprite.png) 0px 56px;
+}
+
+.in3:hover{background: url(../img/in3_logo_sprite.png) 0px 0px;}
+
+/*Delete Fitweek, YNIO, Pardigo Files*/
+
+/*img.fitWeek{
     width: 157px;
     height: 67px;
     background: url(../img/fitweek_logo_sprt.png) 0px 0px;
@@ -94,6 +105,8 @@ img.YNIO{
 }
 
 .YNIO:hover{background: url(../img/ynio_logo_sprt.png) 0px 67px;}
+*/
+
 
 label {
     float: left;
