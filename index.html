@@ -8,7 +8,7 @@
     <meta content="Entrepreneurship,Innovation,Services,Software" name=
     "keywords">
     <meta content="Independent Software" name="author">
-	<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
     <!-- If you want to ENSURE your full title tag shows in Google SERPS, stick to about 65 characters -->
 
@@ -17,10 +17,10 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet">
     <link href="img/favicon.ico" rel="shortcut icon">
-	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400' rel='stylesheet' type='text/css'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-	<script>
+    <script>
     $(document).ready(function() {
         var height_diff = $(window).height() - $('body').height();
         if ( height_diff > 0 ) {
@@ -28,32 +28,77 @@
         }
         });
     </script>
+
+    <script>
+        $(document).ready(function(){
+
+          
+          $('#slide3').hide();
+          $('#slide2').hide();
+          $('#arrow2').hide();
+          $('#arrow3').hide();
+          
+
+          $('#link1').click(function(){ 
+              $('#slide2').hide();
+              $('#slide3').hide();
+              $('#slide1').show();
+              $('#arrow1').show();
+              $('#arrow2').hide();
+              $('#arrow3').hide();
+          });
+
+          $('#link2').click(function(){ 
+              $('#slide3').hide();
+              $('#slide1').hide();
+              $('#slide2').show();
+              $('#arrow2').show();
+              $('#arrow1').hide();
+              $('#arrow3').hide();
+          }); 
+
+           $('#link3').click(function(){ 
+              $('#slide1').hide();
+              $('#slide2').hide();
+              $('#slide3').show();
+              $('#arrow3').show();
+              $('#arrow2').hide();
+              $('#arrow1').hide();
+              $(this).addClass('.in3current');
+          });
+
+        });
+
+
+    </script>
+
+
 </head>
 
 <body>
     <div id="container">
         <div id="nav" class="center">
-			<img class="indieBadge" src="img/img-indie-badge.png"/>
-			<p class="navigation"><a class="nav_links" href="#products">PRODUCTS</a></p>
-			<p class="navigation"><a class="nav_links" href="#community">COMMUNITY</a></p> 
-			<p class="navigation"><a class="nav_links" href="#workWithUs">WORK WITH US</a></p>
-			<a href="https://www.facebook.com/pages/Independent-Software/646683215349709?skip_nax_wizard=true#"><img class="facebook" src="img/transparent.png"/></a>
-			<a href="https://twitter.com/freeyourdata"><img class="twitter" src="img/transparent.png"/></a>
+            <img class="indieBadge" src="img/img-indie-badge.png"/>
+            <p class="navigation"><a class="nav_links" href="#products">PRODUCTS</a></p>
+            <p class="navigation"><a class="nav_links" href="#community">COMMUNITY</a></p> 
+            <p class="navigation"><a class="nav_links" href="#workWithUs">WORK WITH US</a></p>
+            <a href="https://www.facebook.com/pages/Independent-Software/646683215349709?skip_nax_wizard=true#"><img class="facebook" src="img/transparent.png"/></a>
+            <a href="https://twitter.com/freeyourdata"><img class="twitter" src="img/transparent.png"/></a>
         </div>
-		
-		<div id="mobile_nav">
-			<p class="icon"><img class="indieBadge" src="img/img-indie-badge.png"/></p><br>
-			<p class="navigation"><a class="nav_links" href="#our_products">PRODUCTS</a>
-			<a class="nav_links" href="#community-building">COMMUNITY</a>
-			<a class="nav_links" href="#workWithUs">WORK WITH US</a></p>
-			<p class="socialMedia"><a href="https://www.facebook.com/pages/Independent-Software/646683215349709?skip_nax_wizard=true#"><img class="facebook" src="img/transparent.png"/></a>
-			<a href="https://twitter.com/freeyourdata"><img class="twitter" src="img/transparent.png"/></a></p>
-		</div>
-		<br clear="left"/>
+        
+        <div id="mobile_nav">
+            <p class="icon"><img class="indieBadge" src="img/img-indie-badge.png"/></p><br>
+            <p class="navigation"><a class="nav_links" href="#our_products">PRODUCTS</a>
+            <a class="nav_links" href="#community-building">COMMUNITY</a>
+            <a class="nav_links" href="#workWithUs">WORK WITH US</a></p>
+            <p class="socialMedia"><a href="https://www.facebook.com/pages/Independent-Software/646683215349709?skip_nax_wizard=true#"><img class="facebook" src="img/transparent.png"/></a>
+            <a href="https://twitter.com/freeyourdata"><img class="twitter" src="img/transparent.png"/></a></p>
+        </div>
+        <br clear="left"/>
  
 
         <div id="big_green">
-			<h1 id="title_white">AT INDEPENDENT SOFTWARE<BR>WE HELP ENTREPRENEURS WIN</h1>
+            <h1 id="title_white">AT INDEPENDENT SOFTWARE<BR>WE HELP ENTREPRENEURS WIN</h1>
 
             
             <img id="team_img" src="img/img-team.png">
@@ -63,15 +108,13 @@
 
         <div class="center-arrow" id="diamond_blk"></div>
 
-        <div class="center_text">
-                       
-            
+        
             <div class="center_images">
                 <div id="col_holder">
-					<div id="products">
-						<p class="title_blk">Product Development</p>
-						<p class="body_blk">At Independent Software, we work with you to turn your product idea into a reality.</p>
-					</div>
+                    <div id="products">
+                        <p class="title_blk">Product Development</p>
+                        <p class="body_blk">At Independent Software, we work with you to turn your product idea into a reality.</p>
+                    </div>
                     <div id="col_1" >
                         <img class="padding_left" src="img/img-prd-001.png"  /> 
                         <p class="img_title">Web Applications</p> 
@@ -91,21 +134,20 @@
                         <p class="img_title">Product Design</p> 
                         <span class="img_body">Led by our in-house Art Director, our team will work with you to create optimal user interfaces and branding for your company and its products.</span>
                     </div>
-                </div>	
+                </div>  
             </div>
             
             <br clear="left"/>
  
-            <!-- Mobile Only -->
-			
+            
             <div id="mobile_services">
-				<div id="our_products">
-					<p class="title_blk">Product Development</p>
-					<p class="body_blk">At Independent Software, we work with you to turn your product idea into a reality.</p>
-				</div>
+                <div id="our_products">
+                    <p class="title_blk">Product Development</p>
+                    <p class="body_blk">At Independent Software, we work with you to turn your product idea into a reality.</p>
+                </div>
                 <div>
                     <p>
-						<img class="mobile_services_images" src="img/img-prd-001.png">
+                        <img class="mobile_services_images" src="img/img-prd-001.png">
                     </p>
                     <p class="img_title">Web Applications</p>
                     <p class="img_body">We design and develop web applications customized to your needs, including both front-end and back-end architecture, meeting the highest industry standards of responsiveness and functionality.</p>
@@ -128,86 +170,157 @@
                 </div>
             </div>
             
-            <!-- /Mobile Only -->
+            
             <br clear="left"/><br><br>
-        </div>
-	
+        
+    
+            <div class="center" id="bar_green"></div>
 
-        <div class="center_2 tag_white" id="trapezium_t_white_half">
-            <strong>Our Clients</strong>
-        </div>
+            <div class="center-arrow" id="diamond_green"></div>
+        
+            <div class="center_images">
+                
+                <div>
+                    <p class="title_blk">Our Clients</p>
+                    
+                </div>
+                <div id="col_1">
+                    <p style="text-align: center;"> <a id="link1"><img class="intelliblast" src="img/transparent.png"/></a></p>
+                </div>
+            
+                <div id="col_2">
+                    <p style="text-align: center;"> <a id="link2"><img class="ctBarns" src="img/transparent.png"/></a></p>
+                </div>
+                
+                <div id="col_3">
+                    <p style="text-align: center;"> <a id="link3"><img class="in3" src="img/transparent.png"/></a></p>
+                </div>
+                <br clear="left"/> 
+                <div id="col_1">
+                    <p id="arrow1" class="arrow_up" style="text-align: center;"></p>
+                </div>
+                <div id="col_2">
+                    <p id="arrow2" class="arrow_up" style="text-align: center;"></p>
+                </div>
+                <div id="col_3">
+                    <p id="arrow3" class="arrow_up" style="text-align: center;"></p>
+                </div>
+                <br clear="left"/>  
+                <div id="bar_arrow"> </div>    
+            </div>
+             
+                
+                    
+                <div class="center_images">
+                    <!-- SLIDE 1 -->
+                    <div id="slide1" class="slide">
+                        <div id="caseStudyText"><p class= "caseStudyTitle">CT Barns</p><br><p class="caseStudyText">Connecticut’s network of antique barns is a precious 
+part of its cultural heritage, with barns dating back to the 1800s. The Connecticut Trust for Historic Preservation wanted to reveal it to a wider public. Having created a database of information on surviving barns, the Trust collaborated with Independent Software on a smartphone app to display that information in an engaging, interactive way. The CT Barns app includes GPS map functionality linked to curated photo galleries, allowing users to discover, both physically and virtually, one of Connecticut’s hidden treasures.
+</p> <p class="seeMore caseStudyText">
+                            <br><a href="#">Learn more about our collaboration with CTBarns</a></p></div>
 
-        <div id="who_we_work_with_desktop">
-            <a href="http://health.intelliblast.com/"><img class="YNIO" src="img/transparent.png"/></a>
-            <a href="http://pardigo.wordpress.com/"><img class="pardigo" src="img/transparent.png"/></a>
-            <a href="http://in3consulting.com"><img class="IN3" src="img/transparent.png"/><a/>
-            <a href="http://fitweek.com/"><img class="fitWeek" src="img/transparent.png"/></a>
-            <a href="http://www.connecticutbarns.org/"><img class="ctBarns" src="img/transparent.png"/></a>
-        </div>
+                        <img src="img/intelliblast.png" alt="Slide 1" class="caseStudyImage" />
+                        
+                    </div>
+                    <!-- SLIDE 2 -->
+                    <div id="slide2" class="slide">
+                        <div id="caseStudyText"><p class= "caseStudyTitle">Intelliblast Health</p><br>
+                        <p class="caseStudyText">DIFFERENT TEXT, entrepreneur and nurse practitioner, saw a problem in hospital care. In spite of hospitals’ constant need for nurses, there was no communications technology that filled shift vacancies quickly and efficiently. Matt collaborated with Independent Software to create Intelliblast, an innovative web application that revolutionizes hospital-to-nurse communication. His startup, Intelliblast Health, won a patent, secured significant outside investment, and continues to develop its product with Independent Software.</p><p class="seeMore caseStudyText"><a href="#">Read More</a></p></div>
+                        <img src="img/intelliblast.png" alt="Slide 2" class="caseStudyImage" />
+                        
+                    </div>
+                    <!-- SLIDE 3 -->
+                    <div id="slide3" class="slide">
+                        <div id="caseStudyText"><p class= "caseStudyTitle">Intelliblast Health</p><br>
+                        <p class="caseStudyText">EVEN MORE DIFFERENT TEXT, entrepreneur and nurse practitioner, saw a problem in hospital care. In spite of hospitals’ constant need for nurses, there was no communications technology that filled shift vacancies quickly and efficiently. Matt collaborated with Independent Software to create Intelliblast, an innovative web application that revolutionizes hospital-to-nurse communication. His startup, Intelliblast Health, won a patent, secured significant outside investment, and continues to develop its product with Independent Software.</p> <p class="seeMore caseStudyText"><a href="#">Read More</a></p></div>
+                        <img src="img/intelliblast.png" alt="Slide 3" class="caseStudyImage" />
+                        
+                    </div>
+                   
+                </div>
+            
+<br clear="left"/>
 
-        <div id="who_we_work_with_mobile">
-            <a href="http://health.intelliblast.com/"><img class="YNIO" src="img/transparent.png"/></a><br>
-            <a href="http://pardigo.wordpress.com/"><img class="pardigo" src="img/transparent.png"/></a><br>
-            <a href="http://in3consulting.com"><img class="IN3" src="img/transparent.png"/></a><br>
-            <a href="http://fitweek.com/"> <img class="fitWeek" src="img/transparent.png"/> </a><br>
-            <a href="http://www.connecticutbarns.org/"><img class="ctBarns" src="img/transparent.png"/></a>
+        <div id="mobile_services">
+                    <div id="ourClients">
+                        <p class="title_blk">Our Clients</p>
+                        <p class="body_blk">At Independent Software, We Help Entrepreneurs Win.<br>Here are a few stories of successful entrepreneurs that we'd like to share with you:</p>
+                    </div>
+                    
+                    <div>
+                        <p><img src="img/ynio_logo2.png" height="125" width="125"/> </p>
+                        <p class="img_title">Intelliblast Health</p> 
+                        <p class="img_body">
+                            We design and develop web applications customized to your needs, including both front-end and back-end architecture, meeting the highest industry standards of responsiveness and functionality.
+                        </p><p class="seeMore"><a href="#" >Read more</a></p>
+                    </div>
+                
+                    <div>
+                        <p><img src="img/fitweek_logo2.png" height="125" width="125"/></p> 
+                        <p class="img_title">Fit Week</p> 
+                        <p class="img_body">Our team will work with you to develop customized native iOS apps, bringing you through the approval process and into the App Store.</p><p class="seeMore"><a href="#">Read more</a></p>
+                    </div>
+                    
+                    <div>
+                        <p><img src="img/in3_logo2.png" height="125" width="125"/></p>
+                        <p class="img_title">IN3</p> 
+                        <p class="img_body">Led by our in-house Art Director, our team will work with you to create optimal user interfaces and branding for your company and its products.</p><p class="seeMore"><a href="#">Read more</a></p>
+                    </div>
+                    
         </div>
-
+<br clear="left"/><br><br>
         <div class="center" id="bar_grey"></div>
 
         <div class="center-arrow" id="diamond_grey"></div>
 
         
-	
+    
         <div class="center_images">
             
             <div id="col_holder">
-				<div id="community">
-					<p class="title_blk">Community-Building</p>
-					<p class="body_blk">In partnership with the State of Connecticut,<br>Independent Software runs a range of initiatives to strengthen our startup ecosystem.</p>
-				</div>
+                <div id="community">
+                    <p class="title_blk">Community-Building</p>
+                    <p class="body_blk">In partnership with the State of Connecticut,<br>Independent Software runs a range of initiatives to strengthen our startup ecosystem.</p>
+                </div>
                 <div id="col_1" >
                    <p> 
-						<a href="http://gridnewhaven.com/a100">
+                        <a href="http://gridnewhaven.com/a100">
                         <img class="padding_left" src="img/a100_on.png"/></a> 
-					</p>
+                    </p>
                     <p class="img_title">A100</p> 
                     <span class="img_body"> Through our A100 Program, we match aspiring software developers with the technical training they need to become "startup-ready." Looking to hire technical talent? A100 is the program for you!</span>
-				</div>
+                </div>
                 
-				<div id="col_2" >
-					<p>
-						<a href="http://newhiteboard.com/">
-						<img class="padding_left" src="img/wb_on.png"/></a>
-					</p> 
-					<p class="img_title">The Whiteboard</p> 
-					<span class="img_body">Edited by Independent Software and sponsored by CTNext, The Whiteboard covers the Connecticut startup ecosystem, including interviews with entrepreneurs and developers; company profiles; product reviews; news and reviews of important events; and issue-focused articles.</span>
-				</div>
+                <div id="col_2" >
+                    <p>
+                        <a href="http://newhiteboard.com/">
+                        <img class="padding_left" src="img/wb_on.png"/></a>
+                    </p> 
+                    <p class="img_title">The Whiteboard</p> 
+                    <span class="img_body">Edited by Independent Software and sponsored by CTNext, The Whiteboard covers the Connecticut startup ecosystem, including interviews with entrepreneurs and developers; company profiles; product reviews; news and reviews of important events; and issue-focused articles.</span>
+                </div>
                 <div id="col_3" >
-					<p>
-						<a href="http://launchhaven.eventbrite.com/">
-						<img class="padding_left" src="img/launchx_logo.png" /></a>
-					</p>
-					<p class="img_title">LaunchX</p> 
-					<span class="img_body">A monthly pitch event held in cities around Connecticut, LaunchX is a venue for entrepreneurs of all stripes to pitch new ideas in a friendly environment. Several successful companies have gotten their start at LaunchX, and everyone comes out of it with new connections.</span>
-				</div>
-            </div>	
-        </div>	
-	
+                    <p>
+                        <a href="http://launchhaven.eventbrite.com/">
+                        <img class="padding_left" src="img/launchx_logo.png" /></a>
+                    </p>
+                    <p class="img_title">LaunchX</p> 
+                    <span class="img_body">A monthly pitch event held in cities around Connecticut, LaunchX is a venue for entrepreneurs of all stripes to pitch new ideas in a friendly environment. Several successful companies have gotten their start at LaunchX, and everyone comes out of it with new connections.</span>
+                </div>
+            </div>  
+        </div>  
+    
     </div>
     
     <br clear="left"/>
 
     <div id="mobile_services">
-		<div id="community-building">
-			<p class="title_blk">Community-Building</p>
-			<p class="body_blk">In partnership with the State of Connecticut,<br>Independent Software runs a range of initiatives to strengthen our startup ecosystem.</p>
-		</div>
+        <div id="community-building">
+            <p class="title_blk">Community-Building</p>
+            <p class="body_blk">In partnership with the State of Connecticut,<br>Independent Software runs a range of initiatives to strengthen our startup ecosystem.</p>
+        </div>
         <div>
-            <p>
-                <a href="http://gridnewhaven.com/a100">
-                    <img src="img/a100_on.png"></a>
-            </p>
+            <p><a href="http://gridnewhaven.com/a100"><img src="img/a100_on.png"></a></p>
             <p class="img_title">A100</p>
             <p class="img_body"> Through our A100 Program, we match aspiring software developers with the technical training they need to become "startup-ready." Looking to hire technical talent? A100 is the program for you!</p>
         </div>
@@ -248,8 +361,8 @@
         <h3><br><a href="javascript:sizecontactus('block')">If you're interested in our services, click here to fill out our inquiry form.</a><br><br></h3>
     </div>
 
-	<div id="contactus" name="contactus">
-		<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+    <div id="contactus" name="contactus">
+        <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
         <input type=hidden name="oid" value="00DA0000000Il2F">
         <input type=hidden name="retURL" value="http://www.indie-soft.com">
 
@@ -309,7 +422,7 @@
     <div id="footer">
         <div id="desktop_footer">
             
-			<div id="col_holder_footer">
+            <div id="col_holder_footer">
                 <div id="col_1_footer" >
                     <p>CONTACT US</p>
                     <p>760 Chapel Street</p>
@@ -326,7 +439,7 @@
                     &nbsp;
                     <img src="img/indie_thegrid.png" />
                 </div>
-            </div>	
+            </div>  
         </div>
 
         <div id="mobile_footer">
