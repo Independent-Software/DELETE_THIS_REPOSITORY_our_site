@@ -30,61 +30,41 @@
     </script>
 
     <script>
-        window.onload = function () {
-        var fine = [40, 40, 40];
-        var mitms = document.getElementsByClassName('mitm');
-        var l0 = (mitms[0].offsetLeft + fine[0]);
-        document.getElementById("arrow_up").style.marginLeft = l0 + "px";
-        
-        for (var i = 0; i < mitms.length; i++) {
-            mitms[i].default = false;
-            mitms[i].fine = fine[i];
-            mitms[i].onmouseover = function () {arr(this);};
-            mitms[i].onmouseout = function () {
-                var tmp = document.getElementsByClassName('mitm');
-                for (var j=0; j<tmp.length; j++) {
-                    if (tmp[j].default === true) {arr(tmp[j]); break;}
-                }
-            };
-            mitms[i].onclick = function() {
-                var tmp = document.getElementsByClassName('mitm');
-                for (var j=0; j<tmp.length; j++) {tmp[j].default = false;}
-                this.default = true;
-            }
-            }
-            mitms[0].default = true;
-        };
-
-        function arr(el) {
-            var mitms = document.getElementsByClassName('mitm');
-            var l = el.offsetLeft + el.fine;
-            document.getElementById("arrow_up").style.marginLeft = l + "px";
-        }
-
-
-    
         $(document).ready(function(){
 
-          // Hide div 2 by default
+          
           $('#slide3').hide();
           $('#slide2').hide();
+          $('#arrow2').hide();
+          $('#arrow3').hide();
+          
 
           $('#link1').click(function(){ 
               $('#slide2').hide();
               $('#slide3').hide();
               $('#slide1').show();
+              $('#arrow1').show();
+              $('#arrow2').hide();
+              $('#arrow3').hide();
           });
 
           $('#link2').click(function(){ 
               $('#slide3').hide();
               $('#slide1').hide();
               $('#slide2').show();
+              $('#arrow2').show();
+              $('#arrow1').hide();
+              $('#arrow3').hide();
           }); 
 
            $('#link3').click(function(){ 
               $('#slide1').hide();
               $('#slide2').hide();
               $('#slide3').show();
+              $('#arrow3').show();
+              $('#arrow2').hide();
+              $('#arrow1').hide();
+              $(this).addClass('.in3current');
           });
 
         });
@@ -204,23 +184,29 @@
                     <p class="title_blk">Our Clients</p>
                     
                 </div>
-                <div id="col_1" class="mitm">
-                   <!-- <p class="img_title"><a id="link1">Intelliblast Health</a></p> -->
-                   <p style="text-align: center;"> <a id="link1"><img class="intelliblast" src="img/transparent.png"/></a></p>
+                <div id="col_1">
+                    <p style="text-align: center;"> <a id="link1"><img class="intelliblast" src="img/transparent.png"/></a></p>
                 </div>
             
-                <div id="col_2" class="mitm">
-                    <!-- <p class="img_title"><a id="link2">CT Barns</a></p>  -->
+                <div id="col_2">
                     <p style="text-align: center;"> <a id="link2"><img class="ctBarns" src="img/transparent.png"/></a></p>
                 </div>
                 
-                <div id="col_3" class="mitm">
-                    <!-- <p class="img_title"><a id="link3">in3 Consulting</a></p> -->
-                    <p style="text-align: center;"> <a id="link2"><img class="in3" src="img/transparent.png"/></a></p>
+                <div id="col_3">
+                    <p style="text-align: center;"> <a id="link3"><img class="in3" src="img/transparent.png"/></a></p>
+                </div>
+                <br clear="left"/> 
+                <div id="col_1">
+                    <p id="arrow1" class="arrow_up" style="text-align: center;"></p>
+                </div>
+                <div id="col_2">
+                    <p id="arrow2" class="arrow_up" style="text-align: center;"></p>
+                </div>
+                <div id="col_3">
+                    <p id="arrow3" class="arrow_up" style="text-align: center;"></p>
                 </div>
                 <br clear="left"/>  
-                <div id="arrow_up"></div>
-                <div id="bar_arrow"></div>    
+                <div id="bar_arrow"> </div>    
             </div>
              
                 

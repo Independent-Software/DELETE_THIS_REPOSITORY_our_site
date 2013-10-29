@@ -14,8 +14,12 @@ a{
 html, body, #container { 
     height: 100%;
 }
-#logo{text-align: center;
-padding-top: 20px;}
+
+#logo{
+    text-align: center;
+    padding-top: 20px;
+}
+
 body{font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;}
 
 body > #container { 
@@ -88,25 +92,7 @@ img.in3{
 
 .in3:hover{background: url(../img/in3_logo_sprite.png) 0px 0px;}
 
-/*Delete Fitweek, YNIO, Pardigo Files*/
-
-/*img.fitWeek{
-    width: 157px;
-    height: 67px;
-    background: url(../img/fitweek_logo_sprt.png) 0px 0px;
-}
-
-.fitWeek:hover{background: url(../img/fitweek_logo_sprt.png) 0px 67px;}
-
-img.YNIO{
-    width: 120px;
-    height: 67px;
-    background: url(../img/ynio_logo_sprt.png) 0px 0px;
-}
-
-.YNIO:hover{background: url(../img/ynio_logo_sprt.png) 0px 67px;}
-*/
-
+.in3current{background: url(../img/in3_logo_sprite.png) 0px 0px;}
 
 label {
     float: left;
@@ -115,21 +101,10 @@ label {
     width: 160px;
 }
 select {width: 155px;}
-textarea {width: 148px;}
-textarea:focus, input:focus {
-border: 1px solid #09C;
-}
 
-/*.mitm {
-    margin: 20px 0px 0px 0px;
-    float: left;
-    display: inline;
-    width: 60px;
-    height: 60px;
-    background: #fff;
-    padding: 20px 0 0 20px;
-    text-align: center;
-}*/
+textarea {width: 148px;}
+
+textarea:focus, input:focus {border: 1px solid #09C;}
 
 #mask{ 
     width:300%; 
@@ -142,7 +117,7 @@ border: 1px solid #09C;
     float:left; 
 }
 
-#arrow_up {
+.arrow_up {
     width: 0; 
     height: 0; 
     border-left: 10px solid transparent;
@@ -150,16 +125,6 @@ border: 1px solid #09C;
     
     border-bottom: 15px solid black;
 }
-
-/*
-#link1 :hover{
-    width: 0; 
-    height: 0; 
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    
-    border-bottom: 15px solid black;
-}*/
 
 .body_blk {
     color:#424142;
