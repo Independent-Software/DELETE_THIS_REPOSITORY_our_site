@@ -68,31 +68,31 @@ img.twitter{
 .pardigo:hover{background: url(../img/pardigo_logo_sprt.png) 0px 67px;}
 */
 img.ctBarns{
-    width: 171px;
-    height: 58px;
-    background: url(../img/ctbarns_logo_sprite.png) 0px 57px;
+    width: 170px;
+    height: 70px;
+    background: url(../img/ctBarnsSprite.png) 0px 70px;
 }
 
-.ctBarns:hover{background: url(../img/ctbarns_logo_sprite.png) 0px 0px;}
+.ctBarns:hover{background: url(../img/ctBarnsSprite.png) 0px 0px;}
 
 img.intelliblast{
-    width: 230px;
-    height: 71px;
-    background: url(../img/intelliblast_logo_sprite.png) 0px 58px;
+    width: 170px;
+    height: 70px;
+    background: url(../img/intelliblastSprite.png) 0px 70px;
 }
 
-.intelliblast:hover{background: url(../img/intelliblast_logo_sprite.png) 0px 0px;}
+.intelliblast:hover{background: url(../img/intelliblastSprite.png) 0px 0px;}
 
 
 img.in3{
-    width: 56px;
-    height: 56px;
-    background: url(../img/in3_logo_sprite.png) 0px 56px;
+    width: 170px;
+    height: 70px;
+    background: url(../img/in3Sprite.png) 0px 70px;
 }
 
-.in3:hover{background: url(../img/in3_logo_sprite.png) 0px 0px;}
+.in3:hover{background: url(../img/in3Sprite.png) 0px 0px;}
 
-.in3current{background: url(../img/in3_logo_sprite.png) 0px 0px;}
+.in3current{background: url(../img/in3Sprite.png) 0px 0px;}
 
 label {
     float: left;
