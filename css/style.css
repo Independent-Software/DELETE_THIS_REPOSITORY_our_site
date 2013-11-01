@@ -126,6 +126,16 @@ textarea:focus, input:focus {border: 1px solid #09C;}
     border-bottom: 15px solid black;
 }
 
+#arrow_up {
+    width: .5%; 
+    height: px; 
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 15px solid black;
+    margin-left: 49%;
+    margin-right: 49%;
+}
+
 .body_blk {
     color:#424142;
     text-align:center;
@@ -342,6 +352,7 @@ textarea:focus, input:focus {border: 1px solid #09C;}
     background-color: black;
     padding-left: 20%;
     padding-right: 20%;
+    clear: right;
 }
 
 #bar_grey {
