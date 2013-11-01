@@ -364,6 +364,8 @@ textarea:focus, input:focus {border: 1px solid #09C;}
 #big_green{
     background:#39b78a; 
     width:100%;
+    padding-top: 5%;
+    padding-bottom: 10%;
 }
 
 #col_1 {
