@@ -185,12 +185,6 @@ textarea:focus, input:focus {border: 1px solid #09C;}
     padding-bottom:40px;
 }
 
-.center_imagesClients{
-    margin: 0 auto; 
-    padding-top:40px;
-    padding-bottom:40px;
-}
-
 .center_single_image{
     display:block;
     margin-left:auto;
@@ -257,8 +251,6 @@ textarea:focus, input:focus {border: 1px solid #09C;}
 }
 
 .img_titlePress a{color:#424142;}
-
-.clientMobileLogos {padding-top: 5%;}
 
 .job_title {
     display: inline-block;
@@ -380,20 +372,10 @@ textarea:focus, input:focus {border: 1px solid #09C;}
 }
 
 #big_green{
-<<<<<<< HEAD
-    position: relative;
     background:#39b78a; 
-    background-image: url(../img/nhlandscape.jpg);
-    background-repeat: no-repeat;
-    /*background-size: 100%;*/
-    background-position: bottom;
-=======
-    background:#39b78a;
->>>>>>> ab385d6c4acb0238fada01225b1f99bb38461a76
     width:100%;
     padding-top: 5%;
     padding-bottom: 10%;
-    
 }
 
 #col_1 {
@@ -739,12 +721,6 @@ textarea {
     width: 80%;
 }
 
-.center_imagesClients{
-    margin-right: auto;
-    margin-left: auto;
-    width: 80%;
-}
-
 .center_text {
     display: block;
     clear: both;
@@ -774,12 +750,6 @@ textarea {
 @media (max-width: 1800px) {
 
 .center_images{
-    margin-right: auto;
-    margin-left: auto;
-    width: 80%;
-}
-
-.center_imagesClients{
     margin-right: auto;
     margin-left: auto;
     width: 80%;
@@ -819,14 +789,8 @@ textarea {
     width: 80%;
 }
 
-.center_imagesClients {
-    margin-right: auto;
-    margin-left: auto;
-    width: 80%;
-}
-
 .center{
-    width:520px;
+    width:500px;
     margin: 0 auto;
     text-align: center;
 }
@@ -891,8 +855,6 @@ textarea {
     padding-top:40px;
     padding-bottom:0px;
 }
-
-.center_imagesClients{display: none;}
 
 .center{
     width:35%;
@@ -1036,12 +998,6 @@ img.twitter{
 #mobile_nav{
     display: block;
 }
-
-#slide1 {display: none;}
-
-#slide2 {display: none;}
-
-#slide3 {display: none;}
 
 #team_img{width:80%}
 
