@@ -258,7 +258,7 @@ textarea:focus, input:focus {border: 1px solid #09C;}
 
 .img_titlePress a{color:#424142;}
 
-.clientMobileLogos {padding-top: 5%;}
+.clientMobileLogos {padding-top: 10%;}
 
 .job_title {
     display: inline-block;
@@ -380,16 +380,12 @@ textarea:focus, input:focus {border: 1px solid #09C;}
 }
 
 #big_green{
-<<<<<<< HEAD
     position: relative;
     background:#39b78a; 
-    background-image: url(../img/nhlandscape.jpg);
+    background-image: url(../img/nhlandscape4.jpg);
     background-repeat: no-repeat;
-    /*background-size: 100%;*/
+    background-size: 100%;
     background-position: bottom;
-=======
-    background:#39b78a;
->>>>>>> ab385d6c4acb0238fada01225b1f99bb38461a76
     width:100%;
     padding-top: 5%;
     padding-bottom: 10%;
@@ -730,6 +726,7 @@ textarea {
   desktop screen
 -------------------------------------------- */
 @media (max-width: 3000px) {
+
 .center {
     width: 550px;
 }
@@ -813,6 +810,7 @@ textarea {
   laptop screen (tablet/iPad)
 -------------------------------------------- */
 @media (max-width: 1024px) {
+
 .center_images {
     margin-right: auto;
     margin-left: auto;
@@ -874,6 +872,7 @@ textarea {
   mobile
 -------------------------------------------- */
 @media (max-width: 617px) {
+
 
 .body_blk {
     color:#424142;
