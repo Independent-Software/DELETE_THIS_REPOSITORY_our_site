@@ -258,6 +258,8 @@ textarea:focus, input:focus {border: 1px solid #09C;}
 
 .img_titlePress a{color:#424142;}
 
+.clientMobileLogos {padding-top: 5%;}
+
 .job_title {
     display: inline-block;
     padding-left: 40px;
@@ -378,10 +380,11 @@ textarea:focus, input:focus {border: 1px solid #09C;}
 }
 
 #big_green{
-    background:#39b78a; 
+    background:#39b78a;
     width:100%;
     padding-top: 5%;
     padding-bottom: 10%;
+    
 }
 
 #col_1 {
