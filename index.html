@@ -35,35 +35,37 @@
           
           $('#slide3').hide();
           $('#slide2').hide();
-          $('#arrow2').hide();
-          $('#arrow3').hide();
+          document.getElementById('link1').style.color="#424142";
+         
           
 
           $('#link1').click(function(){ 
               $('#slide2').hide();
               $('#slide3').hide();
               $('#slide1').show();
-              $('#arrow1').show();
-              $('#arrow2').hide();
-              $('#arrow3').hide();
+              document.getElementById('link1').style.color="#424142";
+              document.getElementById('link2').style.color="#cccccc";
+              document.getElementById('link3').style.color="#cccccc";
+             
           });
 
           $('#link2').click(function(){ 
               $('#slide3').hide();
               $('#slide1').hide();
               $('#slide2').show();
-              $('#arrow2').show();
-              $('#arrow1').hide();
-              $('#arrow3').hide();
+              document.getElementById('link1').style.color="#cccccc";
+              document.getElementById('link2').style.color="#424142";
+              document.getElementById('link3').style.color="#cccccc";
+              
           }); 
 
            $('#link3').click(function(){ 
               $('#slide1').hide();
               $('#slide2').hide();
               $('#slide3').show();
-              $('#arrow3').show();
-              $('#arrow2').hide();
-              $('#arrow1').hide();
+            document.getElementById('link1').style.color="#cccccc";
+            document.getElementById('link2').style.color="#cccccc";
+            document.getElementById('link3').style.color="#424142";
               
           });
 
@@ -193,29 +195,26 @@
                     
                 </div>
                 <div id="col_1">
-                    <p style="text-align: center;"> <a id="link1"><img class="intelliblast" src="img/transparent.png"/></a></p>
-                    <p id="arrow1" class="indicatorArrow" style="text-align: center;"><img src="img/arrow.png"></p>
+                    <p class="caseStudyTitle"><a id="link1">Intelliblast Health</a></p>
                 </div>
             
                 <div id="col_2">
-                    <p style="text-align: center;"> <a id="link2"><img class="ctBarns" src="img/transparent.png"/></a></p>
-                    <p id="arrow2" class="indicatorArrow" style="text-align: center;"><img src="img/arrow.png"></p>
+                    <p class="caseStudyTitle"><a id="link2">CT Barns</a></p>
                 </div>
-                
+              
                 <div id="col_3">
-                    <p style="text-align: center;"> <a id="link3"><img class="in3" src="img/transparent.png"/></a></p>
-                    <p id="arrow3" class="indicatorArrow" style="text-align: center;"><img src="img/arrow.png"></p>
+                    <p class="caseStudyTitle"><a id="link3">in3</a></p>
                 </div>
                 <!-- <br clear="left"/> -->
                
                 <br clear="left"/>   
-                <!--<div id="bar_arrow"> </div>   --> 
+                <div id="bar_arrow"> </div>  
             </div>
              
                 <div class="center_images">
                     <!-- SLIDE 1 -->
                     <div id="slide1" class="slide">
-                        <div id="caseStudyText"><p class= "caseStudyTitle">Intelliblast Health</p><br>
+                        <div id="caseStudyText"><img class="clientLogos" src="img/intelliblast-logo-mb.jpg"/>
                         <p class="caseStudyText">Matthew Browning, entrepreneur and nurse practitioner, saw a problem in hospital care. In spite of hospitals’ constant need for nurses, there was no communications technology that filled shift vacancies quickly and efficiently. Matt collaborated with Independent Software to create Intelliblast, an innovative web application that revolutionizes hospital-to-nurse communication. His startup, Intelliblast Health, won a patent, secured significant outside investment, and continues to develop its product with Independent Software.</p>
                         <p class="seeMore caseStudyText">
                         <br>
@@ -227,8 +226,8 @@
                     <!-- SLIDE 2 -->
                     <div id="slide2" class="slide">
                         <div id="caseStudyText">
-                            <p class= "caseStudyTitle">CT Barns</p>
-                            <br>
+                            <img class="clientLogos" src="img/ctbarns-logo-mb.jpg"/>
+                        
                             <p class="caseStudyText">Connecticut’s network of antique barns is a precious, little-known 
                             piece of its cultural heritage, which the Connecticut Trust for Historic Preservation wanted to reveal to a wider public. Envisioning an interactive mobile app that would lead users on tours, the Trust needed the technical team to build it. So it turned to Independent Software. The resulting  CT Barns iPhone app includes GPS maps linked to curated photo galleries and historical/tourist information, allowing users to discover, both virtually and physically, one of Connecticut’s hidden treasures.</p>
                             <p class="seeMore caseStudyText">
@@ -243,8 +242,7 @@
                     <!-- SLIDE 3 -->
                     <div id="slide3" class="slide">
                         <div id="caseStudyText">
-                            <p class= "caseStudyTitle">in3 Consulting</p>
-                            <br>
+                            <img class="clientLogos" src="img/in3-logo-mb.jpg"/>
                             <p class="caseStudyText">Don Jastrebski is an expert in the role culture plays in organizational 
                             success. He founded in3 Consulting to help companies build and manage teams using a unique evaluation model called FIT. As the consultancy grew, Don wanted to productize FIT, enhancing its effectiveness and allowing his company to scale up. With the Independent Software team, he created an innovative web application (called inSIGHT) that did just that, transforming in3 from a consultancy to a SaaS provider with a growing clientele.
                             </p> 

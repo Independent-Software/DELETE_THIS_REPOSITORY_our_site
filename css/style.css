@@ -160,9 +160,10 @@ textarea:focus, input:focus {border: 1px solid #09C;}
 .caseStudyTitle{
     font-weight: bold;
     font-size: 18px;
-    text-align: left;
-    color:#424142;
+    text-align: center;
+    color:#cccccc;
     letter-spacing:0pt;
+    margin-bottom: 13px;
 }
 
 
@@ -259,6 +260,7 @@ textarea:focus, input:focus {border: 1px solid #09C;}
 .img_titlePress a{color:#424142;}
 
 .clientMobileLogos {padding-top: 10%;}
+.clientLogos{padding-bottom: 26px;}
 
 .job_title {
     display: inline-block;
@@ -367,7 +369,7 @@ textarea:focus, input:focus {border: 1px solid #09C;}
 #bar_arrow {
     width:60%;
     height: 2px;
-    background-color: black;
+    background-color: #cccccc;
     padding-left: 20%;
     padding-right: 20%;
     clear: right;
