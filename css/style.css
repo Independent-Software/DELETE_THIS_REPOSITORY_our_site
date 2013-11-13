@@ -824,10 +824,15 @@ textarea {
 -------------------------------------------- */
 @media (max-width: 1024px) {
 
+<<<<<<< HEAD
 .caseStudyImage{
     width: 65%;
     padding-left: 2%;
     
+=======
+.caseStudyText {
+    font-size: 12px;
+>>>>>>> 4a69f1f5274b281f8421365dcce47e6ef6fee3d2
 }
 
 .center_images {
