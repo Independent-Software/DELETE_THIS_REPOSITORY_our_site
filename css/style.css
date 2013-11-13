@@ -94,9 +94,11 @@ label {
 }
 select {width: 155px;}
 
-textarea {width: 148px;}
+textarea {width: 244px;}
 
-textarea:focus, input:focus {border: 1px solid #09C;}
+textarea:focus, input:focus {
+    border: 1px solid #09C;
+}
 
 #mask{ 
     width:300%; 
@@ -114,7 +116,6 @@ textarea:focus, input:focus {border: 1px solid #09C;}
     height: 0; 
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    
     border-bottom: 15px solid black;
 }
 
@@ -164,6 +165,7 @@ textarea:focus, input:focus {border: 1px solid #09C;}
     color:#cccccc;
     letter-spacing:0pt;
     margin-bottom: 13px;
+    cursor: pointer;
 }
 
 
@@ -208,7 +210,7 @@ textarea:focus, input:focus {border: 1px solid #09C;}
 }
 
 .center{
-    width:550px;
+    width:584px;
     margin: 0 auto;
     padding-top: 20px;
 }
@@ -258,8 +260,15 @@ textarea:focus, input:focus {border: 1px solid #09C;}
 
 .img_titlePress a{color:#424142;}
 
-.clientMobileLogos {padding-top: 10%;}
-.clientLogos{padding-bottom: 26px;}
+.clientLogos {
+    padding-bottom: 3%;
+    width: 100%;
+}
+
+.clientMobileLogos {
+    padding-top: 10%; 
+    padding-bottom: 3%;
+}
 
 .job_title {
     display: inline-block;
@@ -327,7 +336,8 @@ textarea:focus, input:focus {border: 1px solid #09C;}
 
 .seeMore a{
     color: black;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 15px;
 }
     
 .tag_blk {
@@ -472,9 +482,8 @@ textarea:focus, input:focus {border: 1px solid #09C;}
 
 #contactus{
     display: none;
-    margin-left: 25%;
-    margin-right: 25%;
-    width:50%;
+    margin: 0 auto;
+    width: 584px;
     overflow: hidden;
 }
 
@@ -611,10 +620,6 @@ select {
     padding-top:30px;
 }
 
-textarea {
-    width: 40%;
-}
-
 #title_white {
     color:#fff;
     text-align:center;
@@ -714,7 +719,7 @@ textarea {
 }
 
 #work_with_us_mobile{display: none;}
-
+    
 #workWithUs a {
     font-size: 22px;
     text-align: center;
@@ -723,8 +728,7 @@ textarea {
 
 #workWithUs h3{
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 2% 2%;
 }
 
 
@@ -734,9 +738,6 @@ textarea {
 -------------------------------------------- */
 @media (max-width: 3000px) {
 
-.center {
-    width: 550px;
-}
 .center_images{
     margin-right: auto;
     margin-left: auto;
@@ -780,7 +781,6 @@ textarea {
 .caseStudyImage{
     width: 65%;
     padding-left: 2%;
-    
 }
 
 .center_images{
@@ -824,15 +824,16 @@ textarea {
 -------------------------------------------- */
 @media (max-width: 1024px) {
 
-<<<<<<< HEAD
 .caseStudyImage{
     width: 65%;
     padding-left: 2%;
-    
-=======
+}
+
 .caseStudyText {
     font-size: 12px;
->>>>>>> 4a69f1f5274b281f8421365dcce47e6ef6fee3d2
+}
+.seeMore a {
+    font-size: 12px;
 }
 
 .center_images {
@@ -848,7 +849,6 @@ textarea {
 }
 
 .center{
-    width:520px;
     margin: 0 auto;
     text-align: center;
 }
@@ -895,8 +895,7 @@ textarea {
 /* --------------------------------------------
   mobile
 -------------------------------------------- */
-@media (max-width: 760px) {
-
+@media (max-width: 617px) {
 
 .body_blk {
     color:#424142;
@@ -915,8 +914,6 @@ textarea {
     padding-bottom:0px;
 }
 
-
-
 .center_imagesClients{display: none;}
 
 .center{
@@ -934,10 +931,14 @@ textarea {
     vertical-align:text-top;
 }
 
-.mobile_header{display: none;}
+.mobile_header {
+    display: none;
+}
 
-.mobile_services_images{width:25%;
-padding-top: 15px;}
+.mobile_services_images {
+    width:22%;
+    padding-top: 15px;
+}
 
 .img_body {
     color:#424142;
@@ -950,7 +951,7 @@ padding-top: 15px;}
     /*color:#fff;*/
     text-align:center;
     letter-spacing:0pt;
-    font-size:16 px;
+    font-size:16px;
     line-height:150%;
     text-align:center;
 }
@@ -968,10 +969,14 @@ padding-top: 15px;}
     padding-bottom: 12px;
 }
 
-.mobile_image{width:150px;}
+.mobile_image {
+    width:150px;
+}
 
-.navigation{float: none;
-text-align: center;
+.navigation {
+    float: none;
+    text-align: center;
+    padding-bottom: 15px;
 }
 
 .padding_left{
@@ -979,7 +984,14 @@ text-align: center;
     width: 50%;
 }
 
-.socialMedia{text-align: center;}
+.seeMore a {
+    font-size: 14px;
+}
+
+.socialMedia {
+    padding-top: 10px;
+    text-align: center;
+}
 
 img.facebook{
     width:33px;
@@ -990,7 +1002,9 @@ img.facebook{
 }
 
 .facebook:hover{background: url(../img/fb_button.png) 0px 32px;}
+
 .icon{text-align: center;}
+
 img.twitter{
     width: 33px;
     height: 32px;
@@ -1053,9 +1067,12 @@ img.twitter{
     clear: both;
 }
 
-#mobile_services p{
-    text-align: center;}
-    
+#mobile_services p {
+    text-align: center;
+    padding-left: 5%;
+    width: 90%;
+}
+
 #nav{display: none;}
 
 #mobile_nav{
