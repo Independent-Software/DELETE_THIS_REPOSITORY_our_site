@@ -189,7 +189,6 @@ textarea:focus, input:focus {border: 1px solid #09C;}
 .center_imagesClients{
     margin: 0 auto; 
     padding-top:40px;
-    padding-bottom:40px;
 }
 
 .center_single_image{
@@ -778,6 +777,12 @@ textarea {
 -------------------------------------------- */
 @media (max-width: 1800px) {
 
+.caseStudyImage{
+    width: 65%;
+    padding-left: 2%;
+    
+}
+
 .center_images{
     margin-right: auto;
     margin-left: auto;
@@ -818,6 +823,12 @@ textarea {
   laptop screen (tablet/iPad)
 -------------------------------------------- */
 @media (max-width: 1024px) {
+
+.caseStudyImage{
+    width: 65%;
+    padding-left: 2%;
+    
+}
 
 .center_images {
     margin-right: auto;
@@ -898,6 +909,8 @@ textarea {
     padding-top:40px;
     padding-bottom:0px;
 }
+
+
 
 .center_imagesClients{display: none;}
 
