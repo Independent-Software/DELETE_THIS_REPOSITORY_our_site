@@ -819,6 +819,10 @@ textarea {
 -------------------------------------------- */
 @media (max-width: 1024px) {
 
+.caseStudyText {
+    font-size: 12px;
+}
+
 .center_images {
     margin-right: auto;
     margin-left: auto;
