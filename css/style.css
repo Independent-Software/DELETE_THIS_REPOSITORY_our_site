@@ -3,7 +3,7 @@
   
   All CSS is optimized for the web arranged alphabetically 
   and arranged as to web browsers will read them quickest.
-	Remember the order that CSS should be placed in for optimization:
+    Remember the order that CSS should be placed in for optimization:
   Document selectors, classes, and then ID's.
   --Drizzy
 -------------------------------------------- */
@@ -14,8 +14,12 @@ a{
 html, body, #container { 
     height: 100%;
 }
-#logo{text-align: center;
-padding-top: 20px;}
+
+#logo{
+    text-align: center;
+    padding-top: 20px;
+}
+
 body{font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;}
 
 body > #container { 
@@ -24,87 +28,105 @@ body > #container {
 }
 
 form{
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
-	background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-	position:relative;
-	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-	display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+    background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+    position:relative;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    display: block;
 }
 
 img.facebook{
-	width:33px;
-	height: 32px;
-	background: url(../img/fb_button.png) 0px 0px;
-	float: left;
-	margin-top: -10px;
+    width:33px;
+    height: 32px;
+    background: url(../img/fb_button.png) 0px 0px;
+    float: left;
+    margin-top: -10px;
     margin-left: 7px;
 }
 
 .facebook:hover{background: url(../img/fb_button.png) 0px 32px;}
 
 img.twitter{
-	width: 33px;
-	height: 32px;
-	float: left;
-	background: url(../img/tw_button.png) 0px 0px;
-	margin-top: -10px;
+    width: 33px;
+    height: 32px;
+    float: left;
+    background: url(../img/tw_button.png) 0px 0px;
+    margin-top: -10px;
     margin-left: 10px;
 }
 
 .twitter:hover{background: url(../img/tw_button.png) 0px 32px;}
 
-img.pardigo{
-	width: 142px;
-	height: 67px;
-	background: url(../img/pardigo_logo_sprt.png) 0px 0px;
-}
-
-.pardigo:hover{background: url(../img/pardigo_logo_sprt.png) 0px 67px;}
-
 img.ctBarns{
-	width: 137px;
-	height: 67px;
-	background: url(../img/barns_logo_sprt.png) 0px 0px;
+    width: 170px;
+    height: 70px;
+    background: url(../img/ctBarnsSprite.png) 0px 70px;
 }
 
-.ctBarns:hover{background: url(../img/barns_logo_sprt.png) 0px 67px;}
+.ctBarns:hover{background: url(../img/ctBarnsSprite.png) 0px 0px;}
 
-img.IN3{
-	width: 66px;
-	height: 67px;
-	background: url(../img/in3_logo_sprt.png) 0px 0px;
+img.intelliblast{
+    width: 170px;
+    height: 70px;
+    background: url(../img/intelliblastSprite.png) 0px 70px;
 }
 
-.IN3:hover{background: url(../img/in3_logo_sprt.png) 0px 67px;}
+.intelliblast:hover{background: url(../img/intelliblastSprite.png) 0px 0px;}
 
-img.fitWeek{
-	width: 157px;
-	height: 67px;
-	background: url(../img/fitweek_logo_sprt.png) 0px 0px;
+
+img.in3{
+    width: 170px;
+    height: 70px;
+    background: url(../img/in3Sprite.png) 0px 70px;
 }
 
-.fitWeek:hover{background: url(../img/fitweek_logo_sprt.png) 0px 67px;}
+.in3:hover{background: url(../img/in3Sprite.png) 0px 0px;}
 
-img.YNIO{
-	width: 120px;
-	height: 67px;
-	background: url(../img/ynio_logo_sprt.png) 0px 0px;
-}
-
-.YNIO:hover{background: url(../img/ynio_logo_sprt.png) 0px 67px;}
+.in3current{background: url(../img/in3Sprite.png) 0px 0px;}
 
 label {
-	float: left;
-	text-align: right;
-	margin-right: 15px;
-	width: 160px;
+    float: left;
+    text-align: right;
+    margin-right: 15px;
+    width: 160px;
 }
 select {width: 155px;}
-textarea {width: 148px;}
+
+textarea {width: 244px;}
+
 textarea:focus, input:focus {
-border: 1px solid #09C;
+    border: 1px solid #09C;
+}
+
+#mask{ 
+    width:300%; 
+    height:100%; 
+}
+ 
+.box{ 
+    width:25%; 
+    height:100%; 
+    float:left; 
+}
+
+.arrow_up {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid black;
+}
+
+#arrow_up {
+    width: .5%; 
+    height: px; 
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 15px solid black;
+    margin-left: 49%;
+    margin-right: 49%;
 }
 
 .body_blk {
@@ -114,6 +136,38 @@ border: 1px solid #09C;
     font-size:25px;
     padding:10px;
 }
+
+.caseStudyText{
+    color:rgb(66,65,66);
+    font-size:15px;
+    line-height:160%;
+}
+
+.caseStudyImage{
+    width: 65%;
+    padding-left: 2%;
+    
+}
+
+#caseStudyText{
+    float: left;
+    width: 30%;
+    padding-right: 3%;
+    color:rgb(66,65,66);
+    font-size:15px;
+    line-height:160%;
+}
+
+.caseStudyTitle{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color:#cccccc;
+    letter-spacing:0pt;
+    margin-bottom: 13px;
+    cursor: pointer;
+}
+
 
 .center-arrow{
     margin-left:auto; 
@@ -134,6 +188,11 @@ border: 1px solid #09C;
     padding-bottom:40px;
 }
 
+.center_imagesClients{
+    margin: 0 auto; 
+    padding-top:40px;
+}
+
 .center_single_image{
     display:block;
     margin-left:auto;
@@ -151,9 +210,9 @@ border: 1px solid #09C;
 }
 
 .center{
-    width:500px;
+    width:584px;
     margin: 0 auto;
-	padding-top: 20px;
+    padding-top: 20px;
 }
 
 .col_wrap {
@@ -189,6 +248,26 @@ border: 1px solid #09C;
     font-size:18px;
     font-weight:bold;
     text-align:center;
+}
+
+.img_titlePress {
+    color:#424142;
+    letter-spacing:0pt;
+    font-size:18px;
+    font-weight:bold;
+    text-align:left;
+}
+
+.img_titlePress a{color:#424142;}
+
+.clientLogos {
+    padding-bottom: 3%;
+    width: 100%;
+}
+
+.clientMobileLogos {
+    padding-top: 10%; 
+    padding-bottom: 3%;
 }
 
 .job_title {
@@ -238,20 +317,27 @@ border: 1px solid #09C;
 .nav_links{
     color:rgb(165, 165, 165);
     padding-left: 10px;
-	padding-right: 10px;
+    padding-right: 10px;
     font-size:15px;
-	font-weight: normal;
+    font-weight: normal;
 }
 
 #center p{padding-bottom: 20px;}
 
 .nav_links:hover{
-	color: #818486;
+    color: #818486;
 }
 
 .phone{
     text-decoration: none;
     color: white;
+}
+
+
+.seeMore a{
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
 }
     
 .tag_blk {
@@ -273,7 +359,7 @@ border: 1px solid #09C;
     text-align:center;
     letter-spacing:0pt;
     font-size:60px;
-	padding-top: 20px;
+    padding-top: 20px;
     padding-bottom:30px;
 }
 
@@ -283,6 +369,21 @@ border: 1px solid #09C;
     background-color: #424142;
 }
 
+#bar_green {
+    width:100%;
+    height: 30px;
+    background-color: #39b78a;
+}
+
+#bar_arrow {
+    width:60%;
+    height: 2px;
+    background-color: #cccccc;
+    padding-left: 20%;
+    padding-right: 20%;
+    clear: right;
+}
+
 #bar_grey {
     width: 100%;
     height: 30px;
@@ -290,8 +391,22 @@ border: 1px solid #09C;
 }
 
 #big_green{
+    /*position: relative;
     background:#39b78a; 
+    background-image: url(../img/nhlandscape4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
     width:100%;
+    */
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    background: url(../img/nhlandscape2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
 }
 
 #col_1 {
@@ -323,6 +438,15 @@ border: 1px solid #09C;
     padding-top:2%;
 }
 
+#col_1_press {
+    float:left;
+    position:relative;
+    width:80%;
+    padding-right:2%;
+    padding-top:2%;
+    padding-bottom: 10%;
+}
+
 #col_2_footer {
     float:left;
     position:relative;
@@ -349,12 +473,18 @@ border: 1px solid #09C;
     width: 80%;
 }
 
+#col_holder_press{
+    margin-bottom: 150px;
+    margin-left:auto;
+    margin-right: auto;
+    width: 80%;
+}
+
 #contactus{
-	display: none;
-	margin-left: 25%;
-	margin-right: 25%;
-	width:50%;
-	overflow: hidden;
+    display: none;
+    margin: 0 auto;
+    width: 584px;
+    overflow: hidden;
 }
 
 #container {
@@ -372,6 +502,25 @@ border: 1px solid #09C;
     width: 30px; 
     height: 30px; 
     background:#424142 ;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    /* Rotate Origin */
+    -webkit-transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    -o-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+}
+
+#diamond_green {
+    margin-top:-5px; 
+    /* Rotate */
+    width: 30px; 
+    height: 30px; 
+    background:#39b78a;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -456,8 +605,8 @@ border: 1px solid #09C;
 #mobile_nav{display: none;}
 
 #navBar{
-	text-align: center;
-	padding-bottom: 20px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 select {
@@ -471,17 +620,13 @@ select {
     padding-top:30px;
 }
 
-textarea {
-    width: 40%;
-}
-
 #title_white {
-	color:#fff;
-	text-align:center;
-	letter-spacing:0pt;
-	font-size:60px;
+    color:#fff;
+    text-align:center;
+    letter-spacing:0pt;
+    font-size:60px;
     font-weight: normal;
-	padding-top:50px;
+    padding-top:50px;
 }
 
 #trapezium_b {
@@ -534,7 +679,7 @@ textarea {
 }
 
 #trapezium_t_grey_half {
-    margin-top:-20px;
+    /*margin-top:-20px;*/
     height:0; 
     width: 222px;
     border-bottom: 20px solid;
@@ -553,8 +698,8 @@ textarea {
 }
 
 #who_we_work_with_desktop img{
-	margin-left: 1%;
-	margin-right: 1%;}
+    margin-left: 1%;
+    margin-right: 1%;}
 
 #who_we_work_with_mobile{display:none;}
 
@@ -574,25 +719,32 @@ textarea {
 }
 
 #work_with_us_mobile{display: none;}
-
+    
 #workWithUs a {
-	font-size: 22px;
-	text-align: center;
-	color: #818486;
+    font-size: 22px;
+    text-align: center;
+    color: #818486;
 }
 
-#workWithUs h3{text-align: center;
-padding-top: 10px;
-padding-bottom: 10px;}
+#workWithUs h3{
+    text-align: center;
+    padding: 2% 2%;
+}
+
+
 
 /* --------------------------------------------
   desktop screen
 -------------------------------------------- */
 @media (max-width: 3000px) {
-.center {
-    width: 500px;
-}
+
 .center_images{
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+
+.center_imagesClients{
     margin-right: auto;
     margin-left: auto;
     width: 80%;
@@ -626,7 +778,18 @@ padding-bottom: 10px;}
 -------------------------------------------- */
 @media (max-width: 1800px) {
 
+.caseStudyImage{
+    width: 65%;
+    padding-left: 2%;
+}
+
 .center_images{
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+
+.center_imagesClients{
     margin-right: auto;
     margin-left: auto;
     width: 80%;
@@ -660,14 +823,32 @@ padding-bottom: 10px;}
   laptop screen (tablet/iPad)
 -------------------------------------------- */
 @media (max-width: 1024px) {
+
+.caseStudyImage{
+    width: 65%;
+    padding-left: 2%;
+}
+
+.caseStudyText {
+    font-size: 12px;
+}
+.seeMore a {
+    font-size: 12px;
+}
+
 .center_images {
     margin-right: auto;
     margin-left: auto;
     width: 80%;
 }
 
+.center_imagesClients {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+
 .center{
-    width:500px;
     margin: 0 auto;
     text-align: center;
 }
@@ -733,10 +914,12 @@ padding-bottom: 10px;}
     padding-bottom:0px;
 }
 
+.center_imagesClients{display: none;}
+
 .center{
     width:35%;
     margin: 0 auto;
-	padding-top: 20px;
+    padding-top: 20px;
 }
  
 .center_text{display: block;}
@@ -748,10 +931,14 @@ padding-bottom: 10px;}
     vertical-align:text-top;
 }
 
-.mobile_header{display: none;}
+.mobile_header {
+    display: none;
+}
 
-.mobile_services_images{width:25%;
-padding-top: 15px;}
+.mobile_services_images {
+    width:22%;
+    padding-top: 15px;
+}
 
 .img_body {
     color:#424142;
@@ -764,17 +951,17 @@ padding-top: 15px;}
     /*color:#fff;*/
     text-align:center;
     letter-spacing:0pt;
-    font-size:16 px;
+    font-size:16px;
     line-height:150%;
     text-align:center;
 }
 
 .indieBadge{
-	float: none;
-	width: 46px;
-	padding-left:20%;
-	padding-right: 20%;
-	margin: 0 auto;
+    float: none;
+    width: 10%;
+    padding-left:20%;
+    padding-right: 20%;
+    margin: 0 auto;
 }
 
 .job_title {
@@ -782,10 +969,14 @@ padding-top: 15px;}
     padding-bottom: 12px;
 }
 
-.mobile_image{width:150px;}
+.mobile_image {
+    width:150px;
+}
 
-.navigation{float: none;
-text-align: center;
+.navigation {
+    float: none;
+    text-align: center;
+    padding-bottom: 15px;
 }
 
 .padding_left{
@@ -793,24 +984,33 @@ text-align: center;
     width: 50%;
 }
 
-.socialMedia{text-align: center;}
+.seeMore a {
+    font-size: 14px;
+}
+
+.socialMedia {
+    padding-top: 10px;
+    text-align: center;
+}
 
 img.facebook{
-	width:33px;
-	height: 32px;
-	float: none;
-	background: url(../img/fb_button.png) 0px 0px;
-	margin-top: -10px;
+    width:33px;
+    height: 32px;
+    float: none;
+    background: url(../img/fb_button.png) 0px 0px;
+    margin-top: -10px;
 }
 
 .facebook:hover{background: url(../img/fb_button.png) 0px 32px;}
+
 .icon{text-align: center;}
+
 img.twitter{
-	width: 33px;
-	height: 32px;
-	float: none;
-	background: url(../img/tw_button.png) 0px 0px;
-	margin-top: -10px;
+    width: 33px;
+    height: 32px;
+    float: none;
+    background: url(../img/tw_button.png) 0px 0px;
+    margin-top: -10px;
 }
 
 .twitter:hover{background: url(../img/tw_button.png) 0px 32px;}
@@ -867,14 +1067,23 @@ img.twitter{
     clear: both;
 }
 
-#mobile_services p{
-	text-align: center;}
-	
+#mobile_services p {
+    text-align: center;
+    padding-left: 5%;
+    width: 90%;
+}
+
 #nav{display: none;}
 
 #mobile_nav{
-	display: block;
+    display: block;
 }
+
+#slide1 {display: none;}
+
+#slide2 {display: none;}
+
+#slide3 {display: none;}
 
 #team_img{width:80%}
 
@@ -893,12 +1102,12 @@ img.twitter{
     display:inline-block;
     text-align: center;
     margin-left: auto;
-	margin-right: auto;
+    margin-right: auto;
     padding-top:10px;
     padding-bottom:10px;
-	padding-left: 10%;
-	padding-right: 10%;
- 	width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
 }
 
 
